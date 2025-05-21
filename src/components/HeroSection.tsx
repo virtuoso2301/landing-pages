@@ -133,7 +133,7 @@ export default function HeroSection() {
               transition={{ delay: 0.9 }}
             >
               <Image 
-                src="/window.svg" 
+                src="/images/Homepagemobileview.png" 
                 alt="Mobile View" 
                 fill 
                 className="object-contain rounded-xl shadow-lg bg-white/80 backdrop-blur-sm border border-gray-200" 
@@ -164,10 +164,12 @@ export default function HeroSection() {
               transition={{ delay: 1.1 }}
             >
               <Image 
-                src="/globe.svg" 
+                src="/images/Screenshot 2025-05-21 163337.png" 
                 alt="Desktop View" 
                 fill 
-                className="object-contain rounded-xl shadow-lg bg-white/80 backdrop-blur-sm border border-gray-200" 
+                quality={85}
+                priority
+                className="object-cover rounded-xl shadow-lg bg-white/80 backdrop-blur-sm border border-gray-200" 
                 sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, 448px"
               />
             </motion.div>

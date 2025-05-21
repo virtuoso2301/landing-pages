@@ -7,10 +7,10 @@ import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 
 const images = [
-  { src: "/images/zackbee.png", client: "Client A", highlights: ["Modern UI", "Fast Checkout"] },
-  { src: "/images/verlas.png", client: "Client B", highlights: ["SEO Optimized", "Mobile Ready"] },
-  { src: "/images/shriramjewellers.png", client: "Client C", highlights: ["Custom Features", "High Conversion"] },
-  { src: "/images/window.svg", client: "Client D", highlights: ["Brand Colors", "Easy Admin"] },
+  { src: "/images/zackbee.png", client: "Zackbee", highlights: ["Modern UI", "Fast Checkout"] },
+  { src: "/images/verlas.png", client: "Verlas", highlights: ["SEO Optimized", "Mobile Ready"] },
+  { src: "/images/shriramjewellers.png", client: "Shriram Jewellers", highlights: ["Custom Features", "High Conversion"] },
+  { src: "/images/leafyland.png", client: "Leafyland", highlights: ["Brand Colors", "Easy Admin"] },
 ];
 
 export default function ImageSlider() {
@@ -107,7 +107,7 @@ export default function ImageSlider() {
                 />
               </div>
               <div className="absolute inset-0 flex flex-col items-center justify-end pb-4 sm:pb-6 md:pb-8 pointer-events-none">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/90 to-indigo-800/90 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-600/90 to-gray-800/90 opacity-0 group-hover:opacity-100 backdrop-blur-sm transition-opacity duration-300 flex flex-col items-center justify-center text-white p-4">
                   <span className="font-bold text-xl sm:text-2xl mb-2 sm:mb-4">{img.client}</span>
                   <ul className="text-center space-y-1 text-sm sm:text-base">
                     {img.highlights.map((h) => (
